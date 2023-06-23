@@ -3,6 +3,7 @@ import Quill from "quill";
 import "quill/dist/quill.snow.css";
 import "./style.css";
 
+let a=20;
 const TOOLBAR_OPTIONS = [
   [{ header: [1, 2, 3, 4, 5, 6, false] }],
   [{ font: [] }],
@@ -24,7 +25,7 @@ function Editer() {
     wrapper.append(editer);
     new Quill(editer, { theme: "snow", modules: { toolbar: TOOLBAR_OPTIONS } });
   }, []);
-  return <div className="container" ref={wrapperRef}></div>;
+  return <div className="container" ref={wrapperRef}></div>; 
 }
 
 export default Editer;
